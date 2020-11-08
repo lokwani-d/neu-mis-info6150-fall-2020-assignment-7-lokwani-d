@@ -1,0 +1,19 @@
+{
+  "name": "assignment-7-lokwani-d",
+  "version": "1.0.0",
+  "description": "A project to clone cloud Spreadsheets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-fall-2020/assignment-7-lokwani-d.git"
+  },
+  "author": "Deepak Lokwani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-fall-2020/assignment-7-lokwani-d/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-fall-2020/assignment-7-lokwani-d#readme"
+}

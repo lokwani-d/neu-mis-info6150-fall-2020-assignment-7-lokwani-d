@@ -1,0 +1,51 @@
+<!-- Author - Deepak Lokwani -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/main.css" />
+    <title>Assignment 7 - Spreadsheets</title>
+</head>
+
+<body>
+    <div class="spreadsheetHeader">
+        <div class="title">
+            <h1>Cloud Spreadsheet</h1>
+        </div>
+        <div class="buttonContainer">
+            <div class="addRow">
+                <button class="customAddButton" id="addRowBtn" onclick="addRow()">Add Row</button>
+            </div>
+            <div class="addColumn">
+                <button class="customAddButton" id="addColBtn" onclick="addColumn()">Add Column</button>
+            </div>
+            <div class="deleteRow">
+                <button class="customDelButton" id="delRowBtn" onclick="deleteRow()">Delete Row</button>
+            </div>
+            <div class="deleteColumn">
+                <button class="customDelButton" id="delColBtn" onclick="deleteColumn()">Delete Column</button>
+            </div>
+
+            <div class="exportBtn">
+                <button class="exportImportBtn" onclick="exportData()">Export</button>
+            </div>
+            <div class="importBtn">
+                <button class="exportImportBtn" onclick="importData()">Import</button>
+                <input type="file" id="fileUpload" />
+            </div>
+        </div>
+    </div>
+    <div class="spreadsheetContainer">
+        <table id="spreadsheetTable">
+            <thead id="tableHeader"></thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <script src="./../scripts/cloudSheets.js"></script>
+
+
+</body>
+
+</html>
