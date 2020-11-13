@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/neu-mis-info6150-fall-2020/assignment-7-lokwani-d/issues"
   },
-  "homepage": "https://github.com/neu-mis-info6150-fall-2020/assignment-7-lokwani-d#readme"
+  "homepage": "https://github.com/neu-mis-info6150-fall-2020/assignment-7-lokwani-d#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
 }
