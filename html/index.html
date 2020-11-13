@@ -1,51 +1,38 @@
-<!-- Author - Deepak Lokwani -->
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../styles/main.css" />
-    <title>Assignment 7 - Spreadsheets</title>
-</head>
-
+    <link rel="stylesheet" href="./../dist/main.css" />
+    <title>Deepak Lokwani - Spread Sheet</title>
+</header>
 <body>
-    <div class="spreadsheetHeader">
-        <div class="title">
-            <h1>Cloud Spreadsheet</h1>
+    <div class="coverPage">
+        <div class="coverText">
+            <h2>A web-based spreadsheet</h2>
         </div>
-        <div class="buttonContainer">
-            <div class="addRow">
-                <button class="customAddButton" id="addRowBtn" onclick="addRow()">Add Row</button>
-            </div>
-            <div class="addColumn">
-                <button class="customAddButton" id="addColBtn" onclick="addColumn()">Add Column</button>
-            </div>
-            <div class="deleteRow">
-                <button class="customDelButton" id="delRowBtn" onclick="deleteRow()">Delete Row</button>
-            </div>
-            <div class="deleteColumn">
-                <button class="customDelButton" id="delColBtn" onclick="deleteColumn()">Delete Column</button>
-            </div>
-
-            <div class="exportBtn">
-                <button class="exportImportBtn" onclick="exportData()">Export</button>
-            </div>
-            <div class="importBtn">
-                <button class="exportImportBtn" onclick="importData()">Import</button>
-                <input type="file" id="fileUpload" />
-            </div>
+    <div class="header">
+        <div class="sheetOperations">
+            <button id="addColumnBtn" class="small blue button"><p>Add Column</p></button>
+            <button id="delColumnBtn" class="small red button"><p>Delete Column</p></button>
+            <button id="addRowBtn" class="small blue button"><p>Add Row</p></button>
+            <button id="delRowBtn" class="small red button"><p>Delete Row</p></button>
+        </div>
+        <div class="fileOperations">
+            <button id="exportBtn" class="small blue button"><p>Export Sheet</p></button>
+            <button id="importBtn" class="small green button"><p>Import CSV</p></button>
+            <input type="file" id="fileUpload" />
         </div>
     </div>
-    <div class="spreadsheetContainer">
-        <table id="spreadsheetTable">
-            <thead id="tableHeader"></thead>
-            <tbody id="tableBody"></tbody>
-        </table>
+    <div class="topnav">
+        <p >Formulae:</p>
+        <p class="messages"></p>
     </div>
-    <script src="./../scripts/cloudSheets.js"></script>
-
-
+    <div class="sheet">
+        <table id="spreadsheetTable"></table>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.4/rxjs.umd.js"></script>
+<script src="./../scripts/cloudSheets.js"></script>
 </body>
-
 </html>
