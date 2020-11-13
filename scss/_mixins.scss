@@ -1,0 +1,11 @@
+//partial that carries all the mixins and functions
+
+//mixin to pad left and right
+@mixin container {
+    padding: 0 12vw 0 12vw;
+} 
+
+//mixin to align text to center
+@mixin alignCentre {
+    text-align: center;
+} 
